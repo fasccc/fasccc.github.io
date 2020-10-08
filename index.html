@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fasc.tech" />
+  <meta name="description" content="fabian scheffler | data & design">
+  <meta name="og:description" content="fabian scheffler | data & design">
+  <meta name="author" content="Fabian Scheffler">
+  <meta property="og:image" content="https://fasc.tech/android-chrome-512x512.png" />
+  <meta property="og:site_name" content="fabian scheffler" />
+  <meta property="og:title" content="fabian scheffler" />
+  <title>fasc.</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script language="javascript" type="text/javascript" src="libs/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libs/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="libs/noSleep.js"></script>
+  <script>const noSleep = new NoSleep();function preventSleep() {noSleep.enable();}</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="preventSleep()">
+<div id="preloader">
+    <div id="loading-animation" class="fadeIn">
+        <img class="spin" src="pl.png" width="120" height="120" alt="loading..." border="0" />
+    </div>
+</div>
+<a id="description" href="https://www.cct.lsu.edu/~fharhad/ganbatte/siggraph2007/CD2/content/sketches/0250.pdf" target="_blank">stunted supernova #<span id="productionStamp"></span><br>r=<span id="rSize"></span></a>
+<p id="btn">*</p>
+<div id="rldContainer"><p id="rld">&#8635;</p></div>
+<div class="modal" id="modal">
+  <div class="modalheader">
+    <div id="logo">
+      <p>fasc.</p>
+    </div>
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#about">wtf</a></li>
+        <li><a href="#legal">legal</a></li>
+        <li><span class="close">&times;</span></li>
+      </ul>
+    </nav>
+    </div>
+      <div class="modalbody" id="modalbody">
+        <section class="anchor" id="about">
+        <h3 id="wtf">whatthefasc</h3>
+        <div id="notifBox">
+          <div class="notif cc" id="notif">
+          /* Subversively, this site neither uses cookies, tracking-scripts nor stores user data. */
+        </div></div>
+<pre id="codingBox">
+<span class="vc">let</span> fasc = {
+  name: <span class="sc">'fabian'</span>,
+  almaMater: <span class="sc">'dresden tu'</span>,
+  majors: [<span class="sc">'mobility'</span>,
+    <span class="sc">'machine learning'</span>,
+    <span class="sc">'marketing'</span>],
+  oddCombo: <span class="kc">true</span>,
+  interests: [<span class="sc">'data analytics'</span>,
+    <span class="sc">'artificial intelligence'</span>,
+    <span class="sc">'visualisation'</span>],
+  mail: <span class="sc">'</span><span class="sc sl">fa</span><span class="sc sl">sc@l</span><span class="sc sl">ive.d</span><span class="sc sl">e</span><span class="sc">'</span>,
+  <span class="fc">contact</span>() {
+    window.<span class="fc">open</span>(<span class="sc">'mailto:'</span>+this.mail);
+  }
+};
+<span class="cc">// Drop a mail:</span>
+fasc.<span class="fc">contact</span>(); </pre>
+         <div class="vanished" id="cntct"></div>
+        </section>
+        <hr>
+        <section class="anchor" id="legal">
+        <br>
+        <h3>privacy</h3>
+        <p>/*</p>
+        <p>Die Nutzung dieser Webseite ist ohne Angabe personenbezogener Daten möglich. Es kommen weder Cookies noch Tracking-Skripte zum Einsatz.</p>
+        <p>Beim Besuch der Website wird auf dem Server vom Provider automatisch ein "Logfile" sowie ggf. ein "Errorlog" erstellt. Das Error-Logfile enthält alle Fehlermeldungen der letzten 5 Tage und hilft nachzuvollziehen, welche Dateien / URLs nicht ausgeliefert konnten oder in welchen Bereichen der Website Fehler bestehen. Die Logfiles speichern Zugriffsinformationen der letzten 6 Wochen. Der Hostname bzw. die IP-Adresse des Clients, der die Website aufruft, werden dabei anonymisiert.</p>
+        <br>
+        <p>Es ist darauf hinzuweisen, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+        <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Der Betreiber der Seite behält sich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+        <p>*/</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>imprint</h3>
+        <p>/*</p>
+        <p>Information in accordance with section 5 TMG:</p>
+        <p>Fabian Scheffler<br>
+        D-1<span class ="cc">0439 Ber</span>lin<br></p>
+        <br>
+        <p>Haftung für Inhalte</p>
+        <p>Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernehmen. Als Diensteanbieter besteht gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen Verantwortlichkeit. Nach §§ 8 bis 10 TMG besteht jedoch keine Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden betreffende Inhalte umgehend entfernt.</p>
+        <br>
+        <p>Haftung für Links</p>
+        <p>Das Angebot enthält Links zu externen Webseiten Dritter, deren Inhalte außerhalb des Einflussbereiches dieser Site stehen. Aus diesem Grund kann für diese fremden Inhalte keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt.</p>
+        <br>
+        <p>Urheberrecht</p>
+        <p>Die Inhalte auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, wird um einen entsprechenden Hinweis gebeten. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernt.</p>
+        <p>*/</p>
+        </section>
+        <br>
+        <br>
+        <div class="modalfoot">
+          <span>foster fascination, front fascism.</span>
+        </div>
+        <br>
+        <br>
+        </div>
+      </div>
+<script>
+const rSize = document.getElementById('rSize');
+const preloader = document.getElementById('preloader');
+const navbar = document.getElementById('navbar');
+const description = document.getElementById('description');
+const productionStamp = document.getElementById('productionStamp');
+const notif = document.getElementById('notif');
+const frthPt = 'e.de';
+const frstPt = 'mai';
+const modal = document.getElementById('modal');
+const btn = document.getElementById('btn');
+const rldContainer = document.getElementById('rldContainer');
+const rld = document.getElementById('rld');
+const thrdPt = 'c@liv';
+const close = document.getElementsByClassName('close')[0];
+const canvas = document.getElementById('cnv');
+const cntct = document.getElementById('cntct');
+const scndPt = 'lto:fas';
+const markNotif = function(lam=1,t=1000) {
+  const mark = setInterval(() => {notif.style.backgroundPosition = "-100% 0"},lam);
+  setTimeout(() => {clearInterval(mark);},t);
+};
+const preventClose = function(t=2000) {
+  setTimeout(() => {navbar.style.opacity = "1";navbar.style.pointerEvents = "initial";},t);
+};
+const hideNotif = function(t=0) {
+  setTimeout(() => {notif.style.display = "none"},t);
+};
+const startTyping = function(t) {
+  codingBox = setupCodingbox(codingBox);
+  setTimeout(() => {codingBox.type()},t);
+};
+const enableCntctClick = function(t=0) {
+  setTimeout(() => {
+    cntct.classList.remove("vanished");},t);
+};
+const openModal = function(t=2000) {
+  noLoop();
+  description.classList.add("vanished");
+  btn.style.display = "none";
+  rld.style.display = "none";
+  modal.style.display = "block";
+  cnv.classList.add("blurry");
+  startTyping(t);
+  preventClose(t);
+};
+const closeModal = function() {
+  modal.style.display = "none";
+  btn.style.display = "initial";
+  rld.style.display = "initial";
+  cnv.classList.remove("blurry");
+  description.classList.remove("vanished");
+  loop();
+};
+const openCntct = function() {
+  window.location.href = frstPt+scndPt+thrdPt+frthPt;
+};
+const enableReload= function(t=25000) {
+  setTimeout(() => {
+  rldContainer.style.display ="initial";},t);
+};
+enableReload(60000);
+notifBox.onclick = function(lam=1,tM=800,ttH=800) {
+  markNotif(lam,tM);
+  hideNotif(ttH);
+}
+cntct.onclick = function() {
+  openCntct();
+}
+close.onclick = function() {
+  closeModal();
+}
+btn.onclick = function() {
+  openModal();
+}
+rld.onclick = function() {
+  setup();
+  rldContainer.style.display = "none";
+  enableReload();
+}
+</script>
+<script language="javascript" type="text/javascript" src="draw.js"></script>
+<script language="javascript" type="text/javascript" src="type.js"></script>
+<script>window.addEventListener('load', () => {preloader.classList.add('preload-fin');})</script>
+</body>
+</html>
