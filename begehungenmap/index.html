@@ -55,7 +55,7 @@
         var homeIcon = new LeafIcon({ iconUrl: 'bg.png' });
         var homeIconPopUpText = "<b>BEGEHUNGEN CHEMNITZ</b> <br><i>Festivalzentrum</i><br><br> Gutsweg 47, 09116 Chemnitz <br><i><a href=\"https://www.google.com/maps/place/Gutsweg+47,+09116+Chemnitz/@50.8366819,12.8845675,17z/data=!3m1!4b1!4m5!3m4!1s0x47a747af18703ad5:0x929838239e2df1ed!8m2!3d50.8366819!4d12.8867562\" target=\"_blank\">in GoogleMaps öffnen</a></i>";
 
-        L.marker([50.83656, 12.8864], { icon: homeIcon }).bindPopup(homeIconPopUpText).addTo(map);
+        L.marker([50.83656, 12.8864], { icon: homeIcon }).addTo(map).bindPopup(homeIconPopUpText).openPopup();
 
     </script>
 
