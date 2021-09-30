@@ -781,21 +781,21 @@ img.lazyloaded {
     top: 50%;
     left: 50%;
     width: 100%;
-    /* -webkit-transform: rotate(0deg) translate(-50%, -50%);
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
     transform: rotate(0deg) translate(-50%, -50%);
-    transition: opacity 300ms; */
+    /* transition: opacity 300ms; */
     pointer-events: none
 }
 
-@media (orientation: portrait) {
+/* @media (orientation: portrait) {
     .keyvisual__animation {
         width: 70vh;
-        /* -webkit-transform-origin: 0 0;
-        transform-origin: 0 0; */
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
         -webkit-transform: rotate(90deg) scale(0.8) translate(-50%, -50%);
         transform: rotate(90deg) scale(0.8) translate(-50%, -50%)
     }
-}
+} */
 
 .link {
     position: relative;
