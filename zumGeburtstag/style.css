@@ -768,8 +768,8 @@ img.lazyloaded {
 }
 
 .keyvisual__animation {
-    -webkit-animation: fadeIn 2s;
-    animation: fadeIn 2s;
+    /* -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s; */
     display: block;
     font-family: "Druk Wide Web", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     text-transform: uppercase;
